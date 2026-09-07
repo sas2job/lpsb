@@ -108,3 +108,17 @@ Region - Territories. Один ко многим.
 -- рефлексия (задание 2.5.1)
 -- Изучил связи между таблицами, проверил первичные и внешние ключи. 
 -- Разобрал типы связей между таблицами.
+
+Решение задания 2
+Связи в БД
+
+
+Таблица 1	Тип связи	                                Таблица2
+Employees	многие ко многим(через EmployeeTerritories)	Territories
+Orders	        многие ко многим(через OrderDetails)	        Products
+Customers	один ко многим	                                Orders
+Employees	один ко многим	                                Orders
+Shippers	один ко многим	                                Orders
+Suppliers	один ко многим	                                Products
+Categories	один ко многим                                  Products
+Regions	        один ко многим                                  Territories
